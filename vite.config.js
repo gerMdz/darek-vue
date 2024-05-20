@@ -12,5 +12,9 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  server: { // Para definir la dirección donde correrá el proyecto
+    host: 'localhost',
+    port: 8080
   }
 })
